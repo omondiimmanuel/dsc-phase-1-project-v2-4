@@ -46,8 +46,7 @@ The steps i would follow during data gathering and preparation are as follows:
  # It is a pandasdataframe with 9 columns by 26517 rows 
  
   tmdb.columns
- #Shows all the columns of the dataset.
-  Index(['Unnamed: 0', 'genre_ids', 'id', 'original_language', 'original_title', 'popularity', 'release_date', 'title', 'vote_average', 'vote_count'], dtype='object')
+getting all columns of the dataset
   
 tmdb.tail()
  This command gives back the last 5 rows of the dataset
@@ -79,8 +78,8 @@ tmdb.shape
  
 tmdb= tmdb['vote_count'].sort_values(ascending= True) 
  This code sorts all the values in the VOTE_COUNT column in ascending order
+ 
 tmdb.describe()
-
 This code gives a return of mathematical operations performed in the dataset:
 count 72.000000
 mean 12347.972222 - mean
@@ -210,9 +209,10 @@ The Quake	False	False	True	False
 Edward II (2018 re-release)	False	False	True	False
 El Pacto	False	False	True	False
 The Swan	False	False	True	False
-An Actor Prepares	False	False	True	False
+An Actor Prepares	False	False	True	False```
 
 lets count the number of these null values 
+
  #bm.isnull().sum()
  output:
  ```studio 5 domestic_gross 28 foreign_gross 1350 year 0 dtype: int64 ```
