@@ -36,7 +36,7 @@ The first file of interest is (imdb.movies.csv.gz)
   We open it using the code: (tmdb= pd.read_csv('tmdb.movies.csv.gz') 
   tmdb.head(18)
    # This code works by reading files using the pandas attribute read_csv to access the information 
-   # tmdb.head() function then displays the first 8 rows of the dataset.
+   # tmdb.head(8) function then displays the first 8 rows of the dataset.
        
  # Data analysis   
  Some of the movies encountered in the first data set:
